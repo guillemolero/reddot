@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	#recursos{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#recursos span{
+		display: flex;
+		align-items: center;
+	}
+	
+	#botones{
+		display: flex;
+		flex-direction: column;
+	}
+</style>
+<body>
+	<span id="recursos">
+		<span>
+			<p>Oro</p>
+			<input type="text" value="100" readonly class="recursos" id="oro">
+		</span>
+		<span>
+			<p>Plata</p>
+			<input type="text" value="200" readonly class="recursos" id="plata">
+		</span>
+		<span>
+			<p>Bronce</p>
+			<input type="text" value="300" readonly class="recursos" id="bronce">
+		</span>
+	</span>
+	<span id="botones">
+		<button id="1">Boton 1</button>
+		<input id="1" type="hidden" value="" readonly class="boton">
+		<button id="2">Boton 2</button>
+		<input id="2" type="hidden" value="" readonly class="boton">
+		<button id="3">Boton 3</button>
+		<input id="3" type="hidden" value="" readonly class="boton">
+		<button id="4">Boton 4</button>
+		<input id="4" type="hidden" value="" readonly class="boton">
+		<button id="5">Fabrica de Oro</button>
+		<input id="5" type="show" value="Sin fabrica" readonly class="boton">
+	</span>
+</body>
+<script src="script.js"></script>
+<script src="clases.js"></script>
 </html>

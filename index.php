@@ -1,26 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Portatil
+ * Date: 26/06/2017
+ * Time: 1:49
+ */?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
 </head>
-<style>
-	#recursos{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	
-	#recursos span{
-		display: flex;
-		align-items: center;
-	}
-	
-	#botones{
-		display: flex;
-		flex-direction: column;
-	}
-</style>
+
 <body>
 	<span id="recursos">
 		<span>
@@ -36,7 +28,7 @@
 			<input type="text" value="300" readonly class="recursos" id="bronce">
 		</span>
 	</span>
-	<span id="botones">
+    <span id="botones">
 		<button id="1">Boton 1</button>
 		<input id="1" type="hidden" value="" readonly class="boton">
 		<button id="2">Boton 2</button>
@@ -49,6 +41,6 @@
 		<input id="5" type="show" value="Sin fabrica" readonly class="boton">
 	</span>
 </body>
-<script src="script.js"></script>
-<script src="clases.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/clases.js"></script>
 </html>

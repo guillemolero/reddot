@@ -1,0 +1,15 @@
+#recursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recursos span{
+    display: flex;
+    align-items: center;
+}
+
+#botones{
+    display: flex;
+    flex-direction: column;
+}

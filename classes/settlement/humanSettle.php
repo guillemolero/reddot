@@ -6,9 +6,8 @@
  * Date: 26/06/2017
  * Time: 2:00
  */
-class humanSettle
+class humanSettle extends baseSettle
 {
-    public $nivelCentro; //nivel del centro del asentamiento
 
     /* ARMAS */
     private $nivelArmeria; //nivel de las armas disponibles
@@ -110,6 +109,51 @@ class humanSettle
     //mismo sistema que el anterior
     function subeNivelArmeria()
     {
+        //precomprobamos que no estamos al máximo nivel
+        if($this->nivelArmeria < $this->maxArmeria)
+        {
+            //de ser asi subimos el nivel del centro
+            $this->nivelArmeria++;
+
+            //comprobamos gracias al switch qué cosas podemos desbloquear y qué ocurre al subir de nivel
+            switch($this->nivelArmeria)
+            {
+                case 2:
+                    //desbloqueo de cosas
+                    break;
+                case 3:
+                    //desbloqueo de cosas
+                    break;
+                case 4:
+                    //desbloqueo de cosas
+                    break;
+                case 5:
+                    //desbloqueo de cosas
+                    break;
+                case 6:
+                    //desbloqueo de cosas
+                    break;
+                case 7:
+                    //desbloqueo de cosas
+                    break;
+                case 8:
+                    //desbloqueo de cosas
+                    break;
+                case 9:
+                    //desbloqueo de cosas
+                    break;
+                case 10:
+                    //última vez que debería entrar aquí
+                    break;
+                default:
+                    echo "Error al subir de nivel la armería.";
+                    return false;
+            }
+            return true;
+        } else {
+            //asentamiento al máximo nivel
+            return false;
+        }
 
     }
 
